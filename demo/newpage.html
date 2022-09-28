@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 10px;
+            display: grid;
+            grid-template-columns: 30% auto;
+            grid-template-rows: 50px 600px 50px;
+            grid-template-areas: "header header"
+            "main aside"
+            "footer footer";
+        }
+        header{
+            border-style:solid;
+            grid-area: header;
+            
+        }
+        main{
+            border-style:groove;
+            grid-area: main;
+        }
+        aside{
+            border-style:groove;
+            grid-area: aside;
+        }
+        footer{
+            border-style:ridge;
+            grid-area: footer;
+        }
+        h1.first_page{color: pink;padding: 20px;}
+        h1.first_page#special{color:blue;border: 10px;}
+        .rundown .morning h1{
+            color: gold;
+        }
+        .boring, .exciting{
+            background-color: purple;
+            color: white;
+        }
+        .box{
+            padding: 10px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(0, 0, 0);
+            width:30%;
+            margin:20px 0px 2px 0px;
+        }
+        .box_1{
+            background-color: green;
+            color: white;
+        }
+        .box_2{
+            background-color:purple;
+            color: white;
+        }
+        .box_3{
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color:pink;color: azure;">Header Section</header>
+    <main>
+        <h2>Main Section</h2> 
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </main>
+    <aside>
+        <h2>Aside Section
+        </h2>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p></aside>
+    <footer>Footer Section</footer>
+
+    <div class="box box_1">
+        BOX1
+    </div>
+    <div class="box box_2">
+        BOX2
+    </div>
+    <div class="box box_3">
+        BOX3
+    </div>
+    <div class="rundown">
+        <div class="morning">
+            <h1>Morning</h1>
+            1.9:30-10:30am Introduction<br>
+            2.10:30-11:30am HTML Elements<br>
+            3.11:30-12:30pm The DOM
+        </div>
+    </div>
+    <h1 class="first_page">My First Styled Page</h1>
+    <h1 class="first_page" id="special">My Second Styled Page</h1>
+    <p class="boring">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+    </p>
+    <p class="exciting">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+</body>
+</html>
